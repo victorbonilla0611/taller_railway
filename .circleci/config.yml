@@ -1,9 +1,3 @@
-- run:
-    name: Pre-cache fix
-    command: |
-      mkdir -p /tmp/cci_pycache
-      : > /tmp/cci_pycache/lockfile
-
 version: '2.1'
 orbs:
   node: circleci/node@5.1.0
