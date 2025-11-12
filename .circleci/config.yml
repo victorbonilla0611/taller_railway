@@ -1,3 +1,4 @@
+
 version: '2.1'
 orbs:
   node: circleci/node@5.1.0
@@ -29,8 +30,7 @@ jobs:
           name: Deploy to Railway App
           command: |
             cd bankchurn-api
-            railway up --service=awake-surprise
-            railway up --detach
+            railway up --service=awake-surprise --ci --detach
 
 
 tags_only: &tags_only
